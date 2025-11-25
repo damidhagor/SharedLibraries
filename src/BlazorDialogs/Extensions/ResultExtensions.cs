@@ -4,20 +4,26 @@ namespace BlazorDialogs.Extensions;
 
 public static class ResultExtensions
 {
-    public static bool IsConfirmed(this ModalResult<ConfirmationResult> result) => result.IsT0 && result.AsT0.IsT0;
-
-    public static bool IsTextInput(this ModalResult<TextInputResult> result) => result.IsT0 && result.AsT0.IsT0;
-
-    public static bool TryGetText(this ModalResult<TextInputResult> result, [NotNullWhen(true)] out string? text)
+    extension(ModalResult<ConfirmationResult> result)
     {
-        text = null;
+        public bool IsConfirmed() => result.IsT0 && result.AsT0.IsT0;
+    }
 
-        if (result.IsTextInput())
+    extension(ModalResult<TextInputResult> result)
+    {
+        public bool IsTextInput() => result.IsT0 && result.AsT0.IsT0;
+
+        public bool TryGetText([NotNullWhen(true)] out string? text)
         {
-            text = result.AsT0.AsT0.Text;
-            return true;
-        }
+            text = null;
 
-        return text is not null;
+            if (result.IsTextInput())
+            {
+                text = result.AsT0.AsT0.Text;
+                return true;
+            }
+
+            return text is not null;
+        }
     }
 }
