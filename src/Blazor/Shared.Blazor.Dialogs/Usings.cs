@@ -1,0 +1,12 @@
+﻿global using Microsoft.AspNetCore.Components;
+global using Microsoft.AspNetCore.Components.Web;
+global using Microsoft.JSInterop;
+global using OneOf;
+global using Shared.Blazor.Dialogs.Components;
+global using Shared.Blazor.Dialogs.Components.Modals;
+global using Shared.Blazor.Dialogs.Components.Modals.Base;
+global using Shared.Blazor.Dialogs.Models.Contexts;
+global using Shared.Blazor.Dialogs.Models.Results;
+global using Shared.Blazor.Dialogs.Resources;
+global using Shared.Blazor.Dialogs.Services;
+global using Shared.Blazor.SourceGeneration.LocalizationServiceGenerator;
