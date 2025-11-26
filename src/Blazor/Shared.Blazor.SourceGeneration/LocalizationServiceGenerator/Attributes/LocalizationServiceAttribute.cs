@@ -1,4 +1,4 @@
-﻿namespace BlazorSourceGeneration.LocalizationServiceGenerator.Attributes;
+﻿namespace Shared.Blazor.SourceGeneration.LocalizationServiceGenerator.Attributes;
 
 internal static class LocalizationServiceAttribute
 {

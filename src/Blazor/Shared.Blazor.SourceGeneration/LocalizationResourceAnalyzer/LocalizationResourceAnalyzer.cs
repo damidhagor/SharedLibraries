@@ -1,10 +1,10 @@
 ﻿using System.Collections.Immutable;
 using System.Xml.Linq;
-using BlazorSourceGeneration.LocalizationResourceAnalyzer.Models;
 using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.Diagnostics;
+using Shared.Blazor.SourceGeneration.LocalizationResourceAnalyzer.Models;
 
-namespace BlazorSourceGeneration.LocalizationResourceAnalyzer;
+namespace Shared.Blazor.SourceGeneration.LocalizationResourceAnalyzer;
 
 [DiagnosticAnalyzer(LanguageNames.CSharp)]
 internal sealed class LocalizationResourceAnalyzer : DiagnosticAnalyzer

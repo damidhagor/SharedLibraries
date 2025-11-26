@@ -1,0 +1,11 @@
+<Solution>
+  <Folder Name="/Blazor/">
+    <File Path="Blazor/README.md" />
+    <Project Path="Blazor/Shared.Blazor.Dialogs/Shared.Blazor.Dialogs.csproj" />
+    <Project Path="Blazor/Shared.Blazor.SourceGeneration/Shared.Blazor.SourceGeneration.csproj" />
+  </Folder>
+  <Folder Name="/Solution Items/">
+    <File Path="../README.md" />
+    <File Path=".editorconfig" />
+  </Folder>
+</Solution>

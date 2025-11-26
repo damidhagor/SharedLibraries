@@ -1,4 +1,4 @@
-﻿namespace BlazorSourceGeneration.LocalizationServiceGenerator.Models;
+﻿namespace Shared.Blazor.SourceGeneration.LocalizationServiceGenerator.Models;
 
 internal sealed record LocalizationService(
     string Name,

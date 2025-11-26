@@ -1,6 +1,6 @@
 using Microsoft.CodeAnalysis;
 
-namespace BlazorSourceGeneration.LocalizationResourceAnalyzer;
+namespace Shared.Blazor.SourceGeneration.LocalizationResourceAnalyzer;
 
 internal static class Rules
 {

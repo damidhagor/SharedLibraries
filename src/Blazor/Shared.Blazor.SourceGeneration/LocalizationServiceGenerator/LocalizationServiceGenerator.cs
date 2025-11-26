@@ -1,9 +1,9 @@
-﻿using BlazorSourceGeneration.LocalizationServiceGenerator.Attributes;
-using BlazorSourceGeneration.LocalizationServiceGenerator.Generators;
-using BlazorSourceGeneration.LocalizationServiceGenerator.Providers;
-using Microsoft.CodeAnalysis;
+﻿using Microsoft.CodeAnalysis;
+using Shared.Blazor.SourceGeneration.LocalizationServiceGenerator.Attributes;
+using Shared.Blazor.SourceGeneration.LocalizationServiceGenerator.Generators;
+using Shared.Blazor.SourceGeneration.LocalizationServiceGenerator.Providers;
 
-namespace BlazorSourceGeneration.LocalizationServiceGenerator;
+namespace Shared.Blazor.SourceGeneration.LocalizationServiceGenerator;
 
 [Generator]
 public sealed class LocalizationServiceGenerator : IIncrementalGenerator

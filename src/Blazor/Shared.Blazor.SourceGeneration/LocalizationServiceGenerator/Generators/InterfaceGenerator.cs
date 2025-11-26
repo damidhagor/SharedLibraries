@@ -1,8 +1,8 @@
 ﻿using System.Text;
-using BlazorSourceGeneration.LocalizationServiceGenerator.Models;
 using Microsoft.CodeAnalysis;
+using Shared.Blazor.SourceGeneration.LocalizationServiceGenerator.Models;
 
-namespace BlazorSourceGeneration.LocalizationServiceGenerator.Generators;
+namespace Shared.Blazor.SourceGeneration.LocalizationServiceGenerator.Generators;
 
 internal static class InterfaceGenerator
 {

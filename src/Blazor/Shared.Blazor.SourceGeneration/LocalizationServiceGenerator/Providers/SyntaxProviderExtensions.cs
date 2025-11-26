@@ -1,10 +1,10 @@
-﻿using BlazorSourceGeneration.LocalizationServiceGenerator.Attributes;
-using BlazorSourceGeneration.LocalizationServiceGenerator.Models;
-using Microsoft.CodeAnalysis;
+﻿using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
+using Shared.Blazor.SourceGeneration.LocalizationServiceGenerator.Attributes;
+using Shared.Blazor.SourceGeneration.LocalizationServiceGenerator.Models;
 
-namespace BlazorSourceGeneration.LocalizationServiceGenerator.Providers;
+namespace Shared.Blazor.SourceGeneration.LocalizationServiceGenerator.Providers;
 
 internal static class SyntaxProviderExtensions
 {

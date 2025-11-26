@@ -1,9 +1,9 @@
 ﻿using System.Collections.Immutable;
 using System.Xml.Linq;
-using BlazorSourceGeneration.LocalizationServiceGenerator.Models;
 using Microsoft.CodeAnalysis;
+using Shared.Blazor.SourceGeneration.LocalizationServiceGenerator.Models;
 
-namespace BlazorSourceGeneration.LocalizationServiceGenerator.Providers;
+namespace Shared.Blazor.SourceGeneration.LocalizationServiceGenerator.Providers;
 
 internal static class AdditionalTextProviderExtensions
 {

@@ -1,6 +1,6 @@
 ﻿using Microsoft.CodeAnalysis;
 
-namespace BlazorSourceGeneration.LocalizationResourceAnalyzer.Models;
+namespace Shared.Blazor.SourceGeneration.LocalizationResourceAnalyzer.Models;
 
 internal sealed record Resource(
     string FullPath,
