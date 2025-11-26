@@ -7,7 +7,7 @@ public sealed record ConfirmationModalContext(
     string? CancelText = null)
     : BaseModalContext<ConfirmationResult>
 {
-    private static Type _modalType = typeof(ConfirmationModal);
+    private static readonly Type _modalType = typeof(ConfirmationModal);
 
     public override Type ModalType => _modalType;
 }

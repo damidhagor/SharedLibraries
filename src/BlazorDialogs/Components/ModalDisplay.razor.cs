@@ -10,10 +10,10 @@ public sealed partial class ModalDisplay(IModalService modalService) : IDisposab
     {
         _modals.Add((
             modalContext,
-            new Dictionary<string, object>()
+            new()
             {
-                { nameof(BaseModal<BaseModalContext<IModalContext>, IModalContext>.Context), modalContext },
-                { nameof(BaseModal<BaseModalContext<IModalContext>, IModalContext>.OnClosed), EventCallback.Factory.Create<T>(this, (context) => RemoveModal(context)) }
+                { nameof(BaseModal<,>.Context), modalContext },
+                { nameof(BaseModal<,>.OnClosed), EventCallback.Factory.Create<T>(this, (context) => RemoveModal(context)) }
             }));
 
         await InvokeAsync(StateHasChanged);
