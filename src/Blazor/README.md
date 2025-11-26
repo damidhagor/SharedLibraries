@@ -1,12 +1,12 @@
-# BlazorDialogs
+# Shared.Blazor
 
-This repository contains several useful helper libraries for Blazor applications.
+These libraries contain several useful Blazor functionalities.
 
-## BlazorDialogs
+## Shared.Blazor.Dialogs
 
 This library contains a modal dialog service based on Bootstrap 5 for Blazor applications.
 
-It uses the `BlazorDialogs.Components.ModalDisplay` component to display modal dialogs on a page.
+It uses the `Shared.Blazor.Dialogs.Components.ModalDisplay` component to display modal dialogs on a page.
 
 Build in dialogs:
 - `ConfirmationModal`: Confirm or cancel an action.
@@ -17,7 +17,7 @@ Build in dialogs:
 - Add the services to the DI container:
 
 ```csharp
-using BlazorDialogs.Extensions;
+using Shared.Blazor.Dialogs.Extensions;
 
 ...
 
@@ -29,7 +29,7 @@ builder.Services.AddBlazorDialogServices();
   and should also only be present once in the application.
 
 ```html
-@using BlazorDialogs.Components
+@using Shared.Blazor.Dialogs.Components
 
 <ModalDisplay />
 ```
@@ -37,9 +37,9 @@ builder.Services.AddBlazorDialogServices();
 - Inject the `IModalService` into your components and use it to show dialogs.
 
 ```csharp
-using BlazorDialogs.Extensions;
-using BlazorDialogs.Models.Results;
-using BlazorDialogs.Services;
+using Shared.Blazor.Dialogs.Extensions;
+using Shared.Blazor.Dialogs.Models.Results;
+using Shared.Blazor.Dialogs.Services;
 
 class MyClass(IModalService modalService)
 {
@@ -57,14 +57,14 @@ class MyClass(IModalService modalService)
 }
 ```
 
-## BlazorSourceGeneration
+## Shared.Blazor.SourceGeneration
 
 This library contains source generators.
 To use this project, add the following to your project file:
 
 ```xml
 <ItemGroup>
-  <ProjectReference Include="path\to\BlazorSourceGeneration.csproj" OutputItemType="Analyzer" ReferenceOutputAssembly="false" />
+  <ProjectReference Include="path\to\Shared.Blazor.SourceGeneration.csproj" OutputItemType="Analyzer" ReferenceOutputAssembly="false" />
 </ItemGroup>
 ```
 
@@ -87,11 +87,11 @@ Add the following lines to the `.csproj` file:
 </PropertyGroup>
 ```
 
-**2) LocalizationServiceAttribute:** Add the `BlazorSourceGeneration.LocalizationServiceGenerator.LocalizationServiceAttribute`
+**2) LocalizationServiceAttribute:** Add the `Shared.Blazor.SourceGeneration.LocalizationServiceGenerator.LocalizationServiceAttribute`
 to the class that needs to be declared for the `IStringLocalizer` to find the corresponding resource file:
 
 ```csharp
-using BlazorSourceGeneration.LocalizationServiceGenerator;
+using Shared.Blazor.SourceGeneration.LocalizationServiceGenerator;
 
 [LocalizationService("Localization.resx")]
 public sealed partial class Localization { }
